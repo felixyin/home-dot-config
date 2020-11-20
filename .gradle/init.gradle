@@ -1,0 +1,29 @@
+allprojects {
+    apply plugin: 'maven'
+    def mavenUserName = 'admin'
+    def mavenPassword = 'Ybkk1027'
+    repositories {
+        maven {
+            credentials {
+                username mavenUserName
+                password mavenPassword
+            }
+            url 'http://qtrj.i234.me:8081/repository/maven-public/'
+        }
+    }
+    uploadArchives {
+        //默认发布到Maven Nexus私服的发行库
+        def nexusUrl ="http://qtrj.i234.me:8081/repository/maven-releases/"
+        //如果为快照版本发布到Maven Nexus私服的快照库
+        if(version.endsWith("-SNAPSHOT")) {
+            nexusUrl ="http://qtrj.i234.me:8081/repository/maven-snapshots/"
+        }
+        repositories {
+            mavenDeployer {
+                repository(url: nexusUrl) {
+                   authentication(userName: mavenUserName, password: mavenPassword)
+                }
+            }
+        }
+    }
+}
