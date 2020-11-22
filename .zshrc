@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/yinbin/.oh-my-zsh"
+export ZSH="/home/fy/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -118,15 +118,15 @@ jdk8
 
 
 # 配置android
-export ANDROID_HOME=/Users/yinbin/tools/android/sdk
-export ANDROID_SDK_ROOT=/Users/yinbin/tools/android/sdk
+export ANDROID_HOME=/home/fy/tools/android/sdk
+export ANDROID_SDK_ROOT=/home/fy/tools/android/sdk
 export PATH="$PATH":"$ANDROID_HOME/tools"
 export PATH="$PATH":"$ANDROID_HOME/platform-tools"
 
 
 # 配置dart
 #export PATH="$PATH":"$HOME/.pub-cache/bin"
-export DART_SDK="/Users/yinbin/tools/flutter/bin/cache/dart-sdk"
+export DART_SDK="/home/fy/tools/flutter/bin/cache/dart-sdk"
 export PATH="$PATH":"$DART_SDK/bin"
 
 
@@ -134,7 +134,7 @@ export PATH="$PATH":"$DART_SDK/bin"
 export PUB_HOSTED_URL=https://pub.flutter-io.cn 
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PATH="$PATH":"$HOME/.pub-cache/bin"
-export PATH="$PATH:/Users/yinbin/tools/flutter/bin"
+export PATH="$PATH:/home/fy/tools/flutter/bin"
 #export PUB_HOSTED_URL=https://dart-pub.mirrors.sjtug.sjtu.edu.cn/
 #export FLUTTER_STORAGE_BASE_URL=https://mirrors.sjtug.sjtu.edu.cn/
 export ENABLE_FLUTTER_DESKTOP=true
